@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'repository/pages/home_page.dart';
+import 'package:portfolio_web_latest/domain/constants/app_themes/app_theme.dart';
+import 'repository/pages/splash_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,11 +15,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Portfolio',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const HomePage(),
+      theme: appLightTheme,
+      darkTheme: appDarkTheme,
+      home: const SplashPage(),
     );
   }
 }
