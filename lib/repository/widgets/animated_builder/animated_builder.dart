@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 class AnimatedWidgetPage extends StatefulWidget {
   const AnimatedWidgetPage({
     super.key,
-    required this.whoIsAnmate,
+    required this.whoIsAnimate,
   });
 
-  final Widget whoIsAnmate;
+  final Widget whoIsAnimate;
 
   @override
   State<AnimatedWidgetPage> createState() => _AnimatedWidgetPageState();
@@ -34,7 +34,7 @@ class _AnimatedWidgetPageState extends State<AnimatedWidgetPage>
     // ..repeat(reverse: false, period: const Duration(seconds: 1));
 
     animation = Tween(begin: 0.4, end: 0.9).animate(
-        CurvedAnimation(parent: aniController, curve: Curves.fastOutSlowIn));
+        CurvedAnimation(parent: aniController, curve: Curves.easeInBack));
   }
 
   @override
@@ -47,7 +47,7 @@ class _AnimatedWidgetPageState extends State<AnimatedWidgetPage>
             child: mxChild,
           );
         },
-        child: widget.whoIsAnmate);
+        child: widget.whoIsAnimate);
   }
 }
 

@@ -66,13 +66,14 @@ final appDarkTheme = ThemeData(
     useMaterial3: true,
     colorScheme: const ColorScheme.dark(
         secondaryContainer: AppColors.onPrimaryLableColor,
-        primary: AppColors.primaryColor,
-        surface: AppColors.onPrimaryDarkLableColor,
+        primary: AppColors.primaryDarkColor,
+        //  surface: Colors.grey.shade900,
+        // surface: AppColors.onPrimaryDarkLableColor,
         //   brightness: Brightness.dark,
-        primaryContainer: AppColors.primaryContainerColor,
-        secondary: AppColors.secondaryColor,
-        onPrimaryContainer: AppColors.onPrimaryContainerTextColor,
-        onPrimary: AppColors.onPrimaryLableColor),
+        primaryContainer: AppColors.primaryDarkContainerColor,
+        secondary: AppColors.secondaryDarkColor,
+        onPrimaryContainer: AppColors.onPrimaryDarkContainerTextColor,
+        onPrimary: AppColors.onPrimaryDarkLableColor),
     textTheme: const TextTheme(
       titleMedium: TextStyle(
           fontFamily: "NunitoSans",

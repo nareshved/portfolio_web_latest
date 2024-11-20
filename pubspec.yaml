@@ -39,6 +39,8 @@ dependencies:
   hugeicons: ^0.0.7
   animated_text_kit: ^4.2.2
   provider: ^6.1.2
+  shared_preferences: ^2.3.3
+  animate_do: ^3.3.4
 
 dev_dependencies:
   flutter_test:
