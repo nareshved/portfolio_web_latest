@@ -14,7 +14,10 @@ class HomeMobile extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8),
           child: ListView(
-            children: const [AppBarWidgetPage(), InfoSection()],
+            children: const [
+              InfoSection(),
+
+            ],
           ),
         ),
       ),

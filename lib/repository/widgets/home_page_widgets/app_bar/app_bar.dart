@@ -81,9 +81,7 @@ class AppBarWidgetPage extends StatelessWidget {
                   icon: HugeIcon(
                       size: isHover ? 28 : 19,
                       icon: HugeIcons.strokeRoundedLinkedin01,
-                      color: isDark
-                          ? Colors.white
-                          : Theme.of(context).colorScheme.primary),
+                      color: Colors.white),
                 ),
               ),
               HoverEffect(
@@ -94,9 +92,7 @@ class AppBarWidgetPage extends StatelessWidget {
                   icon: HugeIcon(
                       size: isHover ? 28 : 19,
                       icon: HugeIcons.strokeRoundedWhatsapp,
-                      color: isDark
-                          ? Colors.white
-                          : Theme.of(context).colorScheme.primary),
+                      color: Colors.white),
                 ),
               ),
               HoverEffect(
@@ -108,9 +104,7 @@ class AppBarWidgetPage extends StatelessWidget {
                   icon: HugeIcon(
                       size: isHover ? 28 : 19,
                       icon: HugeIcons.strokeRoundedMailAtSign01,
-                      color: isDark
-                          ? Colors.white
-                          : Theme.of(context).colorScheme.primary),
+                      color: Colors.white),
                 ),
               ),
             ],

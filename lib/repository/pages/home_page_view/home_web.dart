@@ -8,6 +8,7 @@ class HomePageWeb extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //   final isPage = MediaQuery.sizeOf(context);
+    //  var isDark = context.read<DarkThemeProvider>().themeValue;
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
