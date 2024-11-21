@@ -48,6 +48,20 @@ class AppBarWidgetPage extends StatelessWidget {
                             : Theme.of(context).colorScheme.primary),
                   ),
                 ),
+                HoverEffect(
+                  builder: (isHover) => IconButton(
+                    tooltip: "Nareshved1996@gmail.com",
+                    hoverColor:
+                        isHover ? Theme.of(context).colorScheme.primary : null,
+                    onPressed: () {},
+                    icon: HugeIcon(
+                        size: isHover ? 28 : 19,
+                        icon: HugeIcons.strokeRoundedMailAtSign01,
+                        color: isDark
+                            ? Colors.white
+                            : Theme.of(context).colorScheme.primary),
+                  ),
+                ),
               ],
             ),
             trailing: Switch.adaptive(
@@ -84,7 +98,21 @@ class AppBarWidgetPage extends StatelessWidget {
                           ? Colors.white
                           : Theme.of(context).colorScheme.primary),
                 ),
-              )
+              ),
+              HoverEffect(
+                builder: (isHover) => IconButton(
+                  tooltip: "Nareshved1996@gmail.com",
+                  hoverColor:
+                      isHover ? Theme.of(context).colorScheme.primary : null,
+                  onPressed: () {},
+                  icon: HugeIcon(
+                      size: isHover ? 28 : 19,
+                      icon: HugeIcons.strokeRoundedMailAtSign01,
+                      color: isDark
+                          ? Colors.white
+                          : Theme.of(context).colorScheme.primary),
+                ),
+              ),
             ],
           );
   }

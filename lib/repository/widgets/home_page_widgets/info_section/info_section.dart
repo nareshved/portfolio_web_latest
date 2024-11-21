@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_web_latest/domain/constants/app_contents/contents.dart';
 import 'package:portfolio_web_latest/domain/constants/image_assets_path/images_asset.dart';
 import '../../../../domain/constants/responsive/responsive.dart';
 
@@ -25,7 +26,7 @@ class InfoSection extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            "Hi, I`am Naresh Kumar Vaid",
+                            introTitle,
                             textAlign: TextAlign.left,
                             style: Theme.of(context)
                                 .textTheme
@@ -33,7 +34,7 @@ class InfoSection extends StatelessWidget {
                                 .copyWith(fontWeight: FontWeight.bold),
                           ),
                           Text(
-                            "flutter developer",
+                            devRole,
                             style: Theme.of(context)
                                 .textTheme
                                 .bodyLarge!
@@ -42,7 +43,7 @@ class InfoSection extends StatelessWidget {
                             textAlign: TextAlign.left,
                           ),
                           const Text(
-                            "frontend developer",
+                            introDesc,
                             textAlign: TextAlign.left,
                           ),
                         ],
@@ -50,9 +51,13 @@ class InfoSection extends StatelessWidget {
                     ),
                   ),
                   Expanded(
-                      child: Image.asset(
-                    ImagesAssetPage.croppedMyImg,
-                    fit: BoxFit.fitHeight,
+                      child: Container(
+                    height: double.infinity,
+                    width: double.infinity,
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            fit: BoxFit.fitHeight,
+                            image: AssetImage(ImagesAssetPage.croppedMyImg))),
                   )),
                 ],
               )

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_web_latest/repository/widgets/home_page_widgets/info_section/info_section.dart';
 
+import '../../widgets/home_page_widgets/app_bar/app_bar.dart';
+
 class HomeMobile extends StatelessWidget {
   const HomeMobile({super.key});
 
@@ -12,7 +14,7 @@ class HomeMobile extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8),
           child: ListView(
-            children: const [InfoSection()],
+            children: const [AppBarWidgetPage(), InfoSection()],
           ),
         ),
       ),
