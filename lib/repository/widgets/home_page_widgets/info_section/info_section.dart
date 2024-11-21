@@ -115,18 +115,20 @@ class InfoSection extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.end,
                           children: [
-                            Container(
-                              width: 200,
-                              height: 200,
-                              decoration: const BoxDecoration(
-                                  color: Colors.white24,
-                                  borderRadius: BorderRadius.horizontal(
-                                      left: Radius.elliptical(300, 60),
-                                      right: Radius.elliptical(88, 66)),
-                                  image: DecorationImage(
-                                      fit: BoxFit.cover,
-                                      image: AssetImage(
-                                          ImagesAssetPage.croppedMyImg))),
+                            Flexible(
+                              child: Container(
+                                width: 200,
+                                height: 200,
+                                decoration: const BoxDecoration(
+                                    color: Colors.white24,
+                                    borderRadius: BorderRadius.horizontal(
+                                        left: Radius.elliptical(300, 60),
+                                        right: Radius.elliptical(88, 66)),
+                                    image: DecorationImage(
+                                        fit: BoxFit.cover,
+                                        image: AssetImage(
+                                            ImagesAssetPage.croppedMyImg))),
+                              ),
                             ),
                             SizedBox(
                               width: isPage.width * 0.100,
@@ -134,6 +136,9 @@ class InfoSection extends StatelessWidget {
                             const AppBarWidgetPage()
                           ],
                         ),
+                      ),
+                      SizedBox(
+                        height: isPage.height * 0.030,
                       ),
                       Expanded(
                           child: Column(
@@ -169,12 +174,12 @@ class InfoSection extends StatelessWidget {
                             height: isPage.height * 0.020,
                           ),
                           Text(
-                            style: TextStyle(
-                              color: isDark
-                                  ? null
-                                  : Theme.of(context).colorScheme.surface,
-                            ),
                             introDesc,
+                            style: TextStyle(
+                                color: isDark
+                                    ? null
+                                    : Theme.of(context).colorScheme.surface,
+                                fontSize: 13),
                             textAlign:
                                 isDesktop ? TextAlign.left : TextAlign.center,
                           ),

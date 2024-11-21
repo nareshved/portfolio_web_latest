@@ -31,7 +31,7 @@ final appLightTheme = ThemeData(
           overflow: TextOverflow.ellipsis),
       bodyLarge: TextStyle(
           fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w500,
+          fontWeight: FontWeight.bold,
           fontSize: 24,
           overflow: TextOverflow.ellipsis),
       bodyMedium: TextStyle(
@@ -52,7 +52,7 @@ final appLightTheme = ThemeData(
       labelMedium: TextStyle(
           fontFamily: "NunitoSans",
           fontWeight: FontWeight.w400,
-          fontSize: 9,
+          fontSize: 11,
           overflow: TextOverflow.ellipsis),
       labelLarge: TextStyle(
           fontFamily: "NunitoSans",
@@ -113,7 +113,7 @@ final appDarkTheme = ThemeData(
       labelMedium: TextStyle(
           fontFamily: "NunitoSans",
           fontWeight: FontWeight.w400,
-          fontSize: 9,
+          fontSize: 11,
           overflow: TextOverflow.ellipsis),
       labelLarge: TextStyle(
           fontFamily: "NunitoSans",

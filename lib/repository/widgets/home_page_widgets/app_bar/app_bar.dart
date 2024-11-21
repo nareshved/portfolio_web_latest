@@ -33,6 +33,7 @@ class AppBarWidgetPage extends StatelessWidget {
                         color: isDark
                             ? Colors.white
                             : Theme.of(context).colorScheme.primary),
+                    tooltip: "LinkedIn",
                   ),
                 ),
                 HoverEffect(
@@ -46,6 +47,21 @@ class AppBarWidgetPage extends StatelessWidget {
                         color: isDark
                             ? Colors.white
                             : Theme.of(context).colorScheme.primary),
+                    tooltip: "WhatsApp",
+                  ),
+                ),
+                HoverEffect(
+                  builder: (isHover) => IconButton(
+                    hoverColor:
+                        isHover ? Theme.of(context).colorScheme.primary : null,
+                    onPressed: () {},
+                    icon: HugeIcon(
+                        size: isHover ? 28 : 19,
+                        icon: HugeIcons.strokeRoundedGithub,
+                        color: isDark
+                            ? Colors.white
+                            : Theme.of(context).colorScheme.primary),
+                    tooltip: "GitHub",
                   ),
                 ),
                 HoverEffect(
@@ -92,6 +108,17 @@ class AppBarWidgetPage extends StatelessWidget {
                   icon: HugeIcon(
                       size: isHover ? 28 : 19,
                       icon: HugeIcons.strokeRoundedWhatsapp,
+                      color: Colors.white),
+                ),
+              ),
+              HoverEffect(
+                builder: (isHover) => IconButton(
+                  hoverColor:
+                      isHover ? Theme.of(context).colorScheme.primary : null,
+                  onPressed: () {},
+                  icon: HugeIcon(
+                      size: isHover ? 28 : 19,
+                      icon: HugeIcons.strokeRoundedGithub,
                       color: Colors.white),
                 ),
               ),
