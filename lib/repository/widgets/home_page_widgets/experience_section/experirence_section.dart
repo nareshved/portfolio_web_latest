@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio_web_latest/repository/widgets/home_page_widgets/experience_section/exp_widget/experience_wid.dart';
+
+import '../../../../domain/constants/responsive/responsive.dart';
 
 class ExperienceSection extends StatelessWidget {
   const ExperienceSection({super.key});
 
   @override
   Widget build(BuildContext context) {
-    // final isDesktop = ResponsiveApp.mqDesktop(context);
+    final isDesktop = ResponsiveApp.mqDesktop(context);
     final isPage = MediaQuery.sizeOf(context);
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
@@ -20,10 +23,53 @@ class ExperienceSection extends StatelessWidget {
         SizedBox(
           height: isPage.height * 0.040,
         ),
+        isDesktop
+            ? const Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  ExperienceSecWidget(
+                    expSecIcon: Icons.business_center,
+                    expSecTitle: "Experience",
+                    expTitle: "checking first",
+                    expDes: "dsfsdfjdsgsj sgdfgsdgfhgdhfshd",
+                    expTime: "2022 5241 12030",
+                  ),
+                  ExperienceSecWidget(
+                    expSecIcon: Icons.school_rounded,
+                    expSecTitle: "Knowledge",
+                    expTitle: "checking first",
+                    expDes: "dsfsdfjdffsdfsfsfssgsj",
+                    expTime: "2022 5241 12030",
+                  ),
+                ],
+              )
+            : const Column(
+                children: [
+                  ExperienceSecWidget(
+                    expSecIcon: Icons.business_center,
+                    expSecTitle: "Experience",
+                    expTitle: "checking first",
+                    expDes:
+                        "dsfsdfjdsgsfsdsdssdsffsdsffghfghfghfghfghfghfghfghfghfghfghfghfghfghfghj",
+                    expTime: "2022 5241 12030",
+                  ),
+                  ExperienceSecWidget(
+                    expSecIcon: Icons.school_rounded,
+                    expSecTitle: "Knowledge",
+                    expTitle: "checking first",
+                    expDes:
+                        "dsfsdfjdsgssfdsfdsfsjgffghhhhhhhhhhhhhhhhhhhhhhhhhh",
+                    expTime: "2022 5241 12030",
+                  ),
+                ],
+              )
       ],
     );
   }
 }
+
+
+
 
 // Row(
 //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
