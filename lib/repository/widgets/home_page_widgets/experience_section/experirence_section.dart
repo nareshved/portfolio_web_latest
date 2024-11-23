@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_web_latest/repository/widgets/home_page_widgets/experience_section/exp_widget/experience_wid.dart';
 import 'package:portfolio_web_latest/repository/widgets/home_page_widgets/experience_section/exp_widget/heading_widget/heading_widget_title.dart';
 
+import '../../../../domain/constants/app_contents/contents.dart';
 import '../../../../domain/constants/responsive/responsive.dart';
 
 class ExperienceSection extends StatelessWidget {
@@ -35,9 +36,9 @@ class ExperienceSection extends StatelessWidget {
                         child: OneColWidget(
                       expIconTitle: "Experience",
                       expHeadIcon: Icons.business_center,
-                      expDes: "no ek",
-                      expTitle: "title ek",
-                      expTime: "25.020",
+                      expDes: expeienceDesc,
+                      expTitle: expeienceTitles,
+                      expTime: date,
                     )),
                     SizedBox(
                       width: isPage.width * 0.035,
@@ -46,13 +47,15 @@ class ExperienceSection extends StatelessWidget {
                         child: OneColWidget(
                       expIconTitle: "Knowledge",
                       expHeadIcon: Icons.school_rounded,
-                      expDes: "no do",
-                      expTitle: "title ek",
+                      expDes:
+                          "Firestore, Authentication, Cloud Functions, and Cloud Messaging",
+                      expTitle: "Firebase Integration",
                       expTime: "25.020",
                     )),
                   ],
                 ),
-              )
+              ),
+             
             ],
           )
         : const Padding(
@@ -63,7 +66,19 @@ class ExperienceSection extends StatelessWidget {
                 OneColWidget(
                   expIconTitle: "Experience",
                   expHeadIcon: Icons.business_center,
-                  expDes: "no ek",
+                  expDes: expeienceDesc,
+                  expTitle: expeienceTitles,
+                  expTime: date,
+                ),
+                OneColWidget(
+                  expIconTitle: "Knowledge",
+                  expHeadIcon: Icons.school_rounded,
+                  expDes: "Firebase Integration",
+                  expTitle: "Firebase Integration",
+                  expTime: "25.020",
+                ),
+                ExperienceSecWidget(
+                  expDes: "no do",
                   expTitle: "title ek",
                   expTime: "25.020",
                 ),

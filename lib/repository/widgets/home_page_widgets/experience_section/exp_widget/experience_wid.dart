@@ -48,7 +48,10 @@ class ExperienceSecWidget extends StatelessWidget {
             children: [
               Text(
                 expTitle,
-                style: Theme.of(context).textTheme.bodyMedium,
+                style: Theme.of(context)
+                    .textTheme
+                    .bodyMedium!
+                    .copyWith(fontWeight: FontWeight.bold),
               ),
               Text(
                 expDes,
@@ -66,7 +69,11 @@ class ExperienceSecWidget extends StatelessWidget {
                     color: Theme.of(context).colorScheme.primary,
                     fontSize: 12,
                     fontWeight: FontWeight.bold),
-              )
+              ),
+
+              // SizedBox(
+              //   width: isPage.width * 0.030,
+              // ),
             ],
           ),
         ),
