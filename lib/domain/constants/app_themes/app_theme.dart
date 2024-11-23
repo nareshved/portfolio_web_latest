@@ -15,50 +15,59 @@ final appLightTheme = ThemeData(
         onPrimary: AppColors.onPrimaryLableColor),
     textTheme: const TextTheme(
       titleMedium: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w400,
-          fontSize: 15,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w400,
+        fontSize: 15,
+        // overflow: TextOverflow.ellipsis
+      ),
       titleLarge: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w500,
-          fontSize: 17,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w500,
+        fontSize: 17,
+        // overflow: TextOverflow.ellipsis
+      ),
       titleSmall: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w300,
-          fontSize: 10,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w300,
+        fontSize: 10,
+        // overflow: TextOverflow.ellipsis
+      ),
       bodyLarge: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.bold,
-          fontSize: 24,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.bold,
+        fontSize: 24,
+        // overflow: TextOverflow.ellipsis
+      ),
       bodyMedium: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w400,
-          fontSize: 16,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w400,
+        fontSize: 16,
+        // overflow: TextOverflow.ellipsis
+      ),
       bodySmall: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w300,
-          fontSize: 9,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w300,
+        fontSize: 9,
+        // overflow: TextOverflow.ellipsis
+      ),
       labelSmall: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w300,
-          fontSize: 9,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w300,
+        fontSize: 9,
+        // overflow: TextOverflow.ellipsis
+      ),
       labelMedium: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w400,
-          fontSize: 13,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w400,
+        fontSize: 13,
+        // overflow: TextOverflow.ellipsis
+      ),
       labelLarge: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w500,
-          fontSize: 21,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w500,
+        fontSize: 21,
+        // overflow: TextOverflow.ellipsis
+      ),
     ));
 
 final appDarkTheme = ThemeData(
@@ -76,48 +85,57 @@ final appDarkTheme = ThemeData(
         onPrimary: AppColors.onPrimaryDarkLableColor),
     textTheme: const TextTheme(
       titleMedium: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w400,
-          fontSize: 15,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w400,
+        fontSize: 15,
+        // overflow: TextOverflow.ellipsis
+      ),
       titleLarge: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w500,
-          fontSize: 17,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w500,
+        fontSize: 17,
+        // overflow: TextOverflow.ellipsis
+      ),
       titleSmall: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w300,
-          fontSize: 10,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w300,
+        fontSize: 10,
+        // overflow: TextOverflow.ellipsis
+      ),
       bodyLarge: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w500,
-          fontSize: 24,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w500,
+        fontSize: 24,
+        // overflow: TextOverflow.ellipsis
+      ),
       bodyMedium: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w400,
-          fontSize: 16,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w400,
+        fontSize: 16,
+        // overflow: TextOverflow.ellipsis
+      ),
       bodySmall: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w300,
-          fontSize: 9,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w300,
+        fontSize: 9,
+        // overflow: TextOverflow.ellipsis
+      ),
       labelSmall: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w300,
-          fontSize: 9,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w300,
+        fontSize: 9,
+        // overflow: TextOverflow.ellipsis
+      ),
       labelMedium: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w400,
-          fontSize: 13,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w400,
+        fontSize: 13,
+        // overflow: TextOverflow.ellipsis
+      ),
       labelLarge: TextStyle(
-          fontFamily: "NunitoSans",
-          fontWeight: FontWeight.w500,
-          fontSize: 21,
-          overflow: TextOverflow.ellipsis),
+        fontFamily: "NunitoSans",
+        fontWeight: FontWeight.w500,
+        fontSize: 21,
+        // overflow: TextOverflow.ellipsis
+      ),
     ));
