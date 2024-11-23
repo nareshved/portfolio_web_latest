@@ -44,6 +44,7 @@ class ExperienceSecWidget extends StatelessWidget {
         Flexible(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Text(
                 expTitle,
@@ -61,8 +62,9 @@ class ExperienceSecWidget extends StatelessWidget {
               ),
               Text(
                 expTime,
-                style: Theme.of(context).textTheme.labelMedium!.copyWith(
+                style: Theme.of(context).textTheme.labelSmall!.copyWith(
                     color: Theme.of(context).colorScheme.primary,
+                    fontSize: 12,
                     fontWeight: FontWeight.bold),
               )
             ],
