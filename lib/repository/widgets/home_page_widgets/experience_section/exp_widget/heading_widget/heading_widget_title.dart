@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class HeadingWidgetTitle extends StatelessWidget {
-  const HeadingWidgetTitle({super.key});
+  const HeadingWidgetTitle({super.key, required this.headingName});
+
+  final String headingName;
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +11,7 @@ class HeadingWidgetTitle extends StatelessWidget {
     return Column(
       children: [
         Text(
-          "Journey",
+          headingName,
           style: Theme.of(context)
               .textTheme
               .bodyLarge!

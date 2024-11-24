@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:hugeicons/hugeicons.dart';
+import 'package:portfolio_web_latest/domain/constants/app_contents/contents.dart';
 import 'package:portfolio_web_latest/repository/widgets/home_page_widgets/experience_section/exp_widget/experience_wid.dart';
 import 'package:portfolio_web_latest/repository/widgets/home_page_widgets/experience_section/exp_widget/heading_widget/heading_widget_title.dart';
-
-import '../../../../domain/constants/app_contents/contents.dart';
 import '../../../../domain/constants/responsive/responsive.dart';
 
 class ExperienceSection extends StatelessWidget {
@@ -10,81 +10,63 @@ class ExperienceSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDesktop = ResponsiveApp.mqDesktop(context);
+    //   final isDesktop = ResponsiveApp.mqDesktop(context);
     final isPage = MediaQuery.sizeOf(context);
-    return isDesktop
-        ? Column(
+    return Column(
+      children: [
+        HeadingWidgetTitle(headingName: 'Journey'),
+        Container(
+          padding: EdgeInsets.all(8),
+          width: isPage.width * 0.85,
+          child: Row(
+            //  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text(
-                "Journey",
-                style: Theme.of(context)
-                    .textTheme
-                    .bodyLarge!
-                    .copyWith(color: Theme.of(context).colorScheme.primary),
-              ),
-              SizedBox(
-                height: isPage.height * 0.040,
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 60),
-                child: Row(
-                  mainAxisAlignment: isDesktop
-                      ? MainAxisAlignment.center
-                      : MainAxisAlignment.start,
-                  children: [
-                    const Expanded(
-                        child: OneColWidget(
-                      expIconTitle: "Experience",
-                      expHeadIcon: Icons.business_center,
-                      expDes: expeienceDesc,
-                      expTitle: expeienceTitles,
+              Expanded(
+                  child: Column(
+                children: [
+                  Icon(
+                    HugeIcons.strokeRoundedCertificate01,
+                    size: 50,
+                  ),
+                  SizedBox(
+                    height: isPage.height * 0.030,
+                  ),
+                  Container(
+                      height: 25,
+                      decoration:
+                          BoxDecoration(borderRadius: BorderRadius.circular(6)),
+                      child: Center(
+                          child: OutlinedButton.icon(
+                        icon: Icon(HugeIcons.strokeRoundedNext),
+                        onPressed: () {},
+                        label: Text(
+                          "Certificate here",
+                          style: Theme.of(context)
+                              .textTheme
+                              .labelSmall!
+                              .copyWith(
+                                  fontWeight: FontWeight.bold, fontSize: 11),
+                        ),
+                      )))
+                ],
+              )),
+              Expanded(
+                  child: Column(
+                children: [
+                  OneColWidget(
+                      expTitle: experienceTitles,
+                      expDes: experienceDesc,
                       expTime: date,
-                    )),
-                    SizedBox(
-                      width: isPage.width * 0.035,
-                    ),
-                    const Expanded(
-                        child: OneColWidget(
-                      expIconTitle: "Knowledge",
-                      expHeadIcon: Icons.school_rounded,
-                      expDes:
-                          "Firestore, Authentication, Cloud Functions, and Cloud Messaging",
-                      expTitle: "Firebase Integration",
-                      expTime: "25.020",
-                    )),
-                  ],
-                ),
-              ),
-             
+                      expIconTitle: "Learning Experience",
+                      expHeadIcon: Icons.school_rounded)
+                ],
+              )),
             ],
-          )
-        : const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
-            child: Column(
-              children: [
-                HeadingWidgetTitle(),
-                OneColWidget(
-                  expIconTitle: "Experience",
-                  expHeadIcon: Icons.business_center,
-                  expDes: expeienceDesc,
-                  expTitle: expeienceTitles,
-                  expTime: date,
-                ),
-                OneColWidget(
-                  expIconTitle: "Knowledge",
-                  expHeadIcon: Icons.school_rounded,
-                  expDes: "Firebase Integration",
-                  expTitle: "Firebase Integration",
-                  expTime: "25.020",
-                ),
-                ExperienceSecWidget(
-                  expDes: "no do",
-                  expTitle: "title ek",
-                  expTime: "25.020",
-                ),
-              ],
-            ),
-          );
+          ),
+        ),
+        Text("dusra index")
+      ],
+    );
   }
 }
 
@@ -136,14 +118,6 @@ class OneColWidget extends StatelessWidget {
     );
   }
 }
-
-
-
-
-
-
-
-
 
 // import 'package:flutter/material.dart';
 // import 'package:portfolio_web_latest/repository/widgets/home_page_widgets/experience_section/exp_widget/auto_size_text.dart';
@@ -238,9 +212,6 @@ class OneColWidget extends StatelessWidget {
 //     );
 //   }
 // }
-
-
-
 
 // Row(
 //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,

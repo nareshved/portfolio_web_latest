@@ -57,11 +57,11 @@ class ExperienceSecWidget extends StatelessWidget {
                 expDes,
                 style: Theme.of(context)
                     .textTheme
-                    .labelMedium!
+                    .labelSmall!
                     .copyWith(fontSize: 13),
               ),
               SizedBox(
-                height: isPage.height * 0.015,
+                height: isPage.height * 0.003,
               ),
               Text(
                 expTime,

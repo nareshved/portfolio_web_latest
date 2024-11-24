@@ -72,7 +72,7 @@ class InfoSection extends StatelessWidget {
                             height: isPage.height * 0.040,
                           ),
                           ElevatedButton.icon(
-                              icon: const Icon(Icons.person_2_rounded),
+                              icon: const Icon(Icons.download),
                               onPressed: () {},
                               label: Text(
                                 "Download Resume",
@@ -187,7 +187,7 @@ class InfoSection extends StatelessWidget {
                             height: isPage.height * 0.040,
                           ),
                           ElevatedButton.icon(
-                              icon: const Icon(Icons.person_2_rounded),
+                              icon: const Icon(Icons.download),
                               onPressed: () {},
                               label: Text(
                                 "Download Resume",
