@@ -51,3 +51,6 @@ const String experienceTitles = "WsCube Tech";
 const String experienceDesc =
     "Founded in 2010, WsCube Tech is an ISO 9001:2015 certified company based in Jodhpur, Rajasthan, India. They offer job-oriented online certification courses in digital marketing, web/app development, cybersecurity, and data science. With a mission to bridge the gap in India’s job preparation ecosystem";
 const String date = "23 Aug 2023 - 16 Feb 2024";
+
+// updated
+

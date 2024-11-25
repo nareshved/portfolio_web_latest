@@ -64,7 +64,6 @@ class ExperienceSection extends StatelessWidget {
             ],
           ),
         ),
-        Text("dusra index")
       ],
     );
   }

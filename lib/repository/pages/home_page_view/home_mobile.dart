@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_web_latest/repository/widgets/home_page_widgets/info_section/info_section.dart';
 
 import '../../widgets/home_page_widgets/experience_section/experirence_section.dart';
+import '../../widgets/my_services/services.dart';
 
 class HomeMobile extends StatelessWidget {
   const HomeMobile({super.key});
@@ -18,6 +19,8 @@ class HomeMobile extends StatelessWidget {
               const InfoSection(),
               SizedBox(height: isPage.height * 0.025),
               const ExperienceSection(),
+              SizedBox(height: isPage.height * 0.025),
+              MyServicesWidget()
             ],
           ),
         ),
