@@ -37,30 +37,36 @@ class ExperienceSection extends StatelessWidget {
                           BoxDecoration(borderRadius: BorderRadius.circular(6)),
                       child: Center(
                           child: OutlinedButton.icon(
-                        icon: Icon(HugeIcons.strokeRoundedNext),
+                        icon: Icon(
+                          HugeIcons.strokeRoundedNext,
+                          size: 17,
+                        ),
                         onPressed: () {},
-                        label: Text(
-                          "Certificate here",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelSmall!
-                              .copyWith(
-                                  fontWeight: FontWeight.bold, fontSize: 11),
+                        label: FittedBox(
+                          child: Text(
+                            "Certificate here",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelSmall!
+                                .copyWith(
+                                    fontWeight: FontWeight.bold, fontSize: 11),
+                          ),
                         ),
                       )))
                 ],
               )),
               Expanded(
+                  flex: 2,
                   child: Column(
-                children: [
-                  OneColWidget(
-                      expTitle: experienceTitles,
-                      expDes: experienceDesc,
-                      expTime: date,
-                      expIconTitle: "Learning Experience",
-                      expHeadIcon: Icons.school_rounded)
-                ],
-              )),
+                    children: [
+                      OneColWidget(
+                          expTitle: experienceTitles,
+                          expDes: experienceDesc,
+                          expTime: date,
+                          expIconTitle: "Learning Experience",
+                          expHeadIcon: Icons.school_rounded)
+                    ],
+                  )),
             ],
           ),
         ),

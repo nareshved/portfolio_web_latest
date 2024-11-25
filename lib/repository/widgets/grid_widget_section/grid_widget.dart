@@ -1,44 +1,42 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_web_latest/domain/constants/responsive/responsive.dart';
 
-import 'services_content_list.dart';
+import '../../../../domain/constants/responsive/responsive.dart';
 
-class MyServicesGrid extends StatelessWidget {
-  MyServicesGrid({super.key});
+class GridWidgetSection extends StatelessWidget {
+  const GridWidgetSection({super.key, required this.contentList});
 
-  final MyServicesContentList servicesData = MyServicesContentList();
+  final List<Map<String, dynamic>> contentList;
 
   @override
   Widget build(BuildContext context) {
     final isDesktop = ResponsiveApp.mqDesktop(context);
-    //  final isPage = MediaQuery.sizeOf(context);
     return isDesktop
         ? SizedBox(
-            height: 400,
+            height: 250,
             child: GridView.builder(
-              itemCount: servicesData.myServicesContent.length,
+              itemCount: contentList.length,
               gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                   maxCrossAxisExtent: 240),
               itemBuilder: (context, index) {
                 return ServiceCard(
-                  icon: servicesData.myServicesContent[index]["icon"],
-                  title: servicesData.myServicesContent[index]["title"],
-                  desc: servicesData.myServicesContent[index]["content"],
+                  icon: contentList[index]["icon"] ?? Icons.access_time_rounded,
+                  title: contentList[index]["title"],
+                  desc: contentList[index]["description"],
                 );
               },
             ),
           )
         : SizedBox(
-            height: 400,
+            height: 330,
             child: GridView.builder(
-              itemCount: servicesData.myServicesContent.length,
+              itemCount: contentList.length,
               gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                   maxCrossAxisExtent: 238),
               itemBuilder: (context, index) {
                 return ServiceCard(
-                  icon: servicesData.myServicesContent[index]["icon"],
-                  title: servicesData.myServicesContent[index]["title"],
-                  desc: servicesData.myServicesContent[index]["content"],
+                  icon: contentList[index]["icon"] ?? Icons.access_time_rounded,
+                  title: contentList[index]["title"],
+                  desc: contentList[index]["description"],
                 );
               },
             ),
@@ -92,7 +90,8 @@ class ServiceCard extends StatelessWidget {
                 desc,
                 textAlign: TextAlign.left,
                 style: TextStyle(
-                  color: Colors.white,
+                  color: Colors.white.withOpacity(0.8),
+                  //  color: Colors.white,
                   fontWeight: FontWeight.bold,
                   fontSize: 9,
                 ),
