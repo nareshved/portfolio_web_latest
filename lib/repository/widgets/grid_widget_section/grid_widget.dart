@@ -12,7 +12,7 @@ class GridWidgetSection extends StatelessWidget {
     final isDesktop = ResponsiveApp.mqDesktop(context);
     return isDesktop
         ? SizedBox(
-            height: 250,
+            height: 350,
             child: GridView.builder(
               itemCount: contentList.length,
               gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
