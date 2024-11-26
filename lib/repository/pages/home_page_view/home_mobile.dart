@@ -1,4 +1,3 @@
-import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio_web_latest/repository/widgets/home_page_widgets/info_section/info_section.dart';
 import 'package:portfolio_web_latest/repository/widgets/home_page_widgets/skills_section/programming_skills/programming_skills.dart';
