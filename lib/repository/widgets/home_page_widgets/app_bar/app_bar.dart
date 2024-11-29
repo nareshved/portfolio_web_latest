@@ -81,6 +81,7 @@ class AppBarWidgetPage extends StatelessWidget {
               ],
             ),
             trailing: Switch.adaptive(
+              activeColor: Theme.of(context).colorScheme.primary,
               value: context.watch<DarkThemeProvider>().themeValue,
               onChanged: (value) {
                 context.read<DarkThemeProvider>().themeValue = value;
